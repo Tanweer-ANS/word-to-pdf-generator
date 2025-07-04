@@ -14,7 +14,7 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await axios.post("/convert", formData, {
+      const response = await axios.post("https://word-to-pdf-generator-1.onrender.com/convert", formData, {
         responseType: "blob"
       });
 
